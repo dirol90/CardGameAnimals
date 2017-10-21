@@ -48,7 +48,12 @@ public class NormalActivity extends AppCompatActivity {
         GameLogic.isFirstClick = false;
         GameLogic.userChoises  = new ArrayList<>();
 
-        Appodeal.show(this, Appodeal.BANNER);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Appodeal.show(NormalActivity.this, Appodeal.BANNER);
+            }
+        }).start();
     }
 
 

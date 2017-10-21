@@ -48,7 +48,12 @@ public class HardActivity extends AppCompatActivity {
         GameLogic.isFirstClick = false;
         GameLogic.userChoises  = new ArrayList<>();
 
-        Appodeal.show(this, Appodeal.BANNER);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Appodeal.show(HardActivity.this, Appodeal.BANNER);
+            }
+        }).start();
     }
 
 

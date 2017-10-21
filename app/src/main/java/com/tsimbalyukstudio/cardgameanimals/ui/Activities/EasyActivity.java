@@ -53,7 +53,13 @@ public class EasyActivity extends AppCompatActivity{
         GameLogic.isFirstClick = false;
         GameLogic.userChoises  = new ArrayList<>();
 
-        Appodeal.show(this, Appodeal.BANNER);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Appodeal.show(EasyActivity.this, Appodeal.BANNER);
+            }
+        }).start();
+
     }
 
 
