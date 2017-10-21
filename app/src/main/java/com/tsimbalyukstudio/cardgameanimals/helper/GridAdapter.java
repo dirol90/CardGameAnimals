@@ -45,7 +45,6 @@ public class GridAdapter extends BaseAdapter implements Animation.AnimationListe
     private int randomInt = (int) (Math.random() * COVERS.values().length);
 
     private Animation animation1;
-    private Animation animation2;
 
     ImageView iv;
 
@@ -154,6 +153,7 @@ public class GridAdapter extends BaseAdapter implements Animation.AnimationListe
                             iv.clearAnimation();
                             iv.setAnimation(animation1);
                             iv.startAnimation(animation1);
+                            GameLogic.isFirstClick = false;
 
                             Handler handler = new Handler();
                             handler.postDelayed(new Runnable() {
@@ -165,6 +165,7 @@ public class GridAdapter extends BaseAdapter implements Animation.AnimationListe
 
                                 }
                             }, 500);
+
                             isFirstClick = true;
                         }
                     }

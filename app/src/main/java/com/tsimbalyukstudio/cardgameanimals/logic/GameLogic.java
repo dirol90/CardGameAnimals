@@ -1,8 +1,5 @@
 package com.tsimbalyukstudio.cardgameanimals.logic;
 
-
-import com.tsimbalyukstudio.cardgameanimals.USER;
-
 import java.util.ArrayList;
 
 public class GameLogic {

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="0dp">
 
@@ -16,7 +17,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/papabear"
-        android:text="SETTINGS"
+        android:text="НАСТРОЙКИ"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -49,7 +50,7 @@
         android:layout_marginTop="32dp"
         android:fontFamily="@font/papabear"
         android:padding="16dp"
-        android:text="Sound"
+        android:text="Звук"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
